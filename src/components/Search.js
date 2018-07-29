@@ -49,7 +49,7 @@ class Search extends Component {
 							</button>
 						</form>
 						<div>
-							<label>{name}</label>
+							<h2>{name}</h2>
 						</div>
 					</div>
 				</div>
