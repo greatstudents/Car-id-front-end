@@ -21,7 +21,7 @@ class Search extends Component {
 			console.log(value);
 			this.setState({name: value, number: ""});
 		});
-        e.preventDefault();
+		e.preventDefault();
 	}
 
 	render() {
@@ -30,23 +30,32 @@ class Search extends Component {
 		return (
 			<div>
 				<Nav />
-				<h3 className="text-center">车牌查询</h3>
+				<h3 className="text-center" style={{fontSize: 50}}>
+					车牌查询
+				</h3>
 				<hr />
 				<div className="col-sm-12">
 					<div className="jumbotron text-center">
 						<form onSubmit={this.getCar.bind(this)}>
-							<label>
-								车牌:
+							<label style={{fontSize: 60}}>
+								车牌  
 								<input
+									// style={{fontSize:60}}
 									type="text"
 									name="name"
 									value={this.state.number}
 									onChange={this.handleChange.bind(this)}
 								/>
 							</label>
-							<button type="submit" className="btn btn-success">
-								查询
-							</button>
+							<div>
+								<button
+									type="submit"
+									className="btn-success"
+									style={{fontSize: 50}}
+								>
+									查询
+								</button>
+							</div>
 						</form>
 						<div>
 							<h2>{name}</h2>
