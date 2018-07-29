@@ -37,8 +37,8 @@ class Search extends Component {
 				<div className="col-sm-12">
 					<div className="jumbotron text-center">
 						<form onSubmit={this.getCar.bind(this)}>
-							<label style={{fontSize: 60}}>
-								车牌  
+							<label style={{fontSize: 30}}>
+								车牌
 								<input
 									// style={{fontSize:60}}
 									type="text"
@@ -47,15 +47,15 @@ class Search extends Component {
 									onChange={this.handleChange.bind(this)}
 								/>
 							</label>
-							<div>
+
 								<button
 									type="submit"
 									className="btn-success"
-									style={{fontSize: 50}}
+									style={{fontSize: 25}}
 								>
 									查询
 								</button>
-							</div>
+
 						</form>
 						<div>
 							<h2>{name}</h2>
